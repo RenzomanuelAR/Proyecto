@@ -2,25 +2,29 @@ package model;
 
 public class Automovil {
 
-	private int codigoProducto;
+	private int codigoAutomovil;
 	private String marca;
-	private double modelo; 	 
-	private Integer anioFabricacion;	
+	private String modelo; 	 
+	private String anioFabricacion;	
 	private String pais;
 	private String color;	
 	private boolean esAutomatico;	
 	private double precio;
-	private Integer cantidadAsientos;	
+	private String cantidadAsientos;	
 	private String tipoCombustible;
 	private Integer stockActual;
 	private Integer stockMinimo;	
 	private Integer stockMaximo;	
 	private boolean estado;
 	
-	public Automovil(int codigoProducto, String marca, double modelo, Integer anioFabricacion, String pais,
-			String color, boolean esAutomatico, double precio, Integer cantidadAsientos, String tipoCombustible,
+	
+	public Automovil() {
+	}
+
+	public Automovil(int codigoAutomovil, String marca, String modelo, String anioFabricacion, String pais,
+			String color, boolean esAutomatico, double precio, String cantidadAsientos, String tipoCombustible,
 			Integer stockActual, Integer stockMinimo, Integer stockMaximo, boolean estado) {
-		this.codigoProducto = codigoProducto;
+		this.codigoAutomovil = codigoAutomovil;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.anioFabricacion = anioFabricacion;
@@ -36,12 +40,12 @@ public class Automovil {
 		this.estado = estado;
 	}
 
-	public int getCodigoProducto() {
-		return codigoProducto;
+	public int getCodigoAutomovil() {
+		return codigoAutomovil;
 	}
 
-	public void setCodigoProducto(int codigoProducto) {
-		this.codigoProducto = codigoProducto;
+	public void setCodigoAutomovil(int codigoProducto) {
+		this.codigoAutomovil = codigoProducto;
 	}
 
 	public String getMarca() {
@@ -52,19 +56,19 @@ public class Automovil {
 		this.marca = marca;
 	}
 
-	public double getModelo() {
+	public String getModelo() {
 		return modelo;
 	}
 
-	public void setModelo(double modelo) {
+	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
 
-	public Integer getAnioFabricacion() {
+	public String getAnioFabricacion() {
 		return anioFabricacion;
 	}
 
-	public void setAnioFabricacion(Integer anioFabricacion) {
+	public void setAnioFabricacion(String anioFabricacion) {
 		this.anioFabricacion = anioFabricacion;
 	}
 
@@ -100,11 +104,11 @@ public class Automovil {
 		this.precio = precio;
 	}
 
-	public Integer getCantidadAsientos() {
+	public String getCantidadAsientos() {
 		return cantidadAsientos;
 	}
 
-	public void setCantidadAsientos(Integer cantidadAsientos) {
+	public void setCantidadAsientos(String cantidadAsientos) {
 		this.cantidadAsientos = cantidadAsientos;
 	}
 

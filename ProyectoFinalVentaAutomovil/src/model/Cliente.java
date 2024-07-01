@@ -11,6 +11,10 @@ public class Cliente {
 	private String email;	
 	private boolean estado;
 	
+	
+	public Cliente() {
+	}
+
 	public Cliente(int codigoCliente, String nombres, String apellidos, String direccion, String telefono, String dni,
 			String email, boolean estado) {
 		this.codigoCliente = codigoCliente;
@@ -87,7 +91,6 @@ public class Cliente {
 		this.estado = estado;
 	}
 	
-	
-	
+
 
 }
